@@ -1,6 +1,6 @@
 package pl.sdacademy.animals;
 
-public interface aAnimal {
+public interface Animal {
 
     boolean isAlive();
 
