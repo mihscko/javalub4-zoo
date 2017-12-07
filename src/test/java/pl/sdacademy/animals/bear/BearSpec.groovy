@@ -6,7 +6,7 @@ import spock.lang.Specification
 
 class BearSpec extends Specification {
 
-    def "Bear should not be alive immediately after creation"() {
+    def "Bear should be alive immediately after creation"() {
         given:
         int weight = 3
         Bear bear = new BlackBear(weight)
@@ -15,7 +15,7 @@ class BearSpec extends Specification {
         boolean result = bear.isAlive()
 
         then:
-        result == false
+        result
     }
 
     def "Bear should be alive if it has eaten within 10 days"() {
